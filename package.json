@@ -1,0 +1,32 @@
+{
+  "name": "es6-basic",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "learning es6 project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valentina1901/Es6-Basic.git"
+  },
+  "keywords": [
+    "arreglos",
+    "funciones",
+    "objetos"
+  ],
+  "author": "valentina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valentina1901/Es6-Basic/issues"
+  },
+  "homepage": "https://github.com/valentina1901/Es6-Basic#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
