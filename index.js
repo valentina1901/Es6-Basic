@@ -60,14 +60,14 @@ materias.push({
 console.log(materias)
 
 //actuaizar investigar :findindex
-const actualizar = materias.splice(2,"Cultura Fisíca","Luis Baquero12","Tranversal",[
-    100,
-    90,
-    100])
+const actualiza = materias.splice(2,"Cultura F","Luis Baquero","Transversal",[
+    4.5,
+    5,
+    5])
 console.log(materias)
 
-//splice investigar: delete
-materias.splice(materia.id,1)
+/*//splice investigar: delete
+materias.splice(materias.id,1)
 
-console.log(materias)
+console.log(materias)*/
 
