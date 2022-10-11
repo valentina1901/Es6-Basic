@@ -53,17 +53,16 @@ materias.push({
             4.4,
             3,
             3
-     ]
-    }
+    ]
+  }
 )
 
 console.log(materias)
 
 //actuaizar investigar :findindex
-const actualiza = materias.splice(2,"Cultura F","Luis Baquero","Transversal",[
-    4.5,
-    5,
-    5])
+const actualiza=materias.findIndex((materia)=>materia.instructor==="Diana")
+materias[actualiza].tipo="Transversal"
+
 console.log(materias)
 
 /*//splice investigar: delete
