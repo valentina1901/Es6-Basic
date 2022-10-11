@@ -60,11 +60,14 @@ materias.push({
 console.log(materias)
 
 //actuaizar investigar :findindex
-const actualiza=materias.findIndex((materia)=>materia.instructor==="Diana")
-materias[actualiza].tipo="Transversal"
-
-console.log(materias)
-
+materias.findIndex((materia)=>{
+    if(materia.id == 1){
+        materia.nombre="Cultura Fisica";
+        materia.instructor ="Luis Baquero"
+    }
+    return materia;
+ })
+ console.log(materias)
 /*//splice investigar: delete
 materias.splice(materias.id,1)
 
