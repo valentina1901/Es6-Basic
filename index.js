@@ -62,8 +62,9 @@ console.log(materias)
 //actuaizar investigar :findindex
 materias.findIndex((materia)=>{
     if(materia.id == 1){
-        materia.nombre="Cultura Fisica";
         materia.instructor ="Luis Baquero"
+        materia.nombre="Cultura Fisica"
+        materia.tipo="Transversal"
     }
     return materia;
  })
