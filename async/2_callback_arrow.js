@@ -1,3 +1,4 @@
+//dependencia http
 let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
 let endpoint='https://pokeapi.co/api/v2/type'
@@ -15,7 +16,7 @@ const fallo=(status)=>{
 }
 
 const get_data=(endpoint,exito, fallo)=>{
-    //2.se crea el objeto de conexion
+    //2.se crea el objeto de conexion e llama igusl que la dependencia
     let http= new XMLHttpRequest()
     //3. abrir conexion
     http.open('get', endpoint)
@@ -28,6 +29,7 @@ const get_data=(endpoint,exito, fallo)=>{
         }else{
             fallo(http.status)
         }
+        exito(http.responseText)
         
     }
 }

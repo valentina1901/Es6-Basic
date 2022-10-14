@@ -1,3 +1,4 @@
+//dependencia http
 let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
 let endpoint='https://pokeapi.co/api/v2/type'

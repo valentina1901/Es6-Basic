@@ -1,0 +1,1 @@
+//https://techy-api.vercel.app/api/json
