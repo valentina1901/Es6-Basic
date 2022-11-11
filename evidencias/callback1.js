@@ -1,41 +1,13 @@
-//https://techy-api.vercel.app/api/json  
-
 const request = require('request')
+ 
+let endpoint = 'https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations';
 
-
-let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-
-let endpoint='https://api.disneyapi.dev/characters'
-
-const exito=(response)=>{
-    //se convierte a json
-    const tipos= JSON.parse(response).data
-    tipos.forEach((disney)=>{
-        console.log(`Nombre: ${disney.name}`)  
-        console.log(`TvShows: ${disney.tvShows}`)  
-        console.log('............................................') 
+const r = request(endpoint , { json: true } , function(error , response, data){
+    
+    data.civilizations.forEach(element =>{
+        console.log(`Nombre: ${element.name}`)
+        console.log(`Expansion: ${element.expansion}`)
+        console.log(`Tipo: ${element.army_type}`)
+        console.log('.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.--.-..-')
     })
-}
-
-const fallo=(status)=>{
-  console.log(status)
-}
-
-const get_data=(endpoint,exito, fallo)=>{
-    //2.se crea el objeto de conexion
-    let http= new XMLHttpRequest()
-    //3. abrir conexion
-    http.open('get', endpoint)
-    //4.enviar la solicitud (request) al API 
-    http.send()
-    //5. hacer el tratamiento de response sea de error o de falla 
-    http.onload= ()=>{
-        if(http.status === 200){
-            exito(http.responseText)
-        }else{
-            fallo(http.status)
-        } 
-    }
-}
-//invocar la funcion get_data
-get_data(endpoint, exito, fallo)
+} )

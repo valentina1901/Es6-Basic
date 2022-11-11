@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon evidencias/promises1.js"
+    "dev": "nodemon evidencias/callback1.js"
   },
   "repository": {
     "type": "git",
